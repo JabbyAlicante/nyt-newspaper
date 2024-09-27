@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Newspaper</title>
+    <link rel="icon" type="image/x-icon" href="https://developer.nytimes.com/files/poweredby_nytimes_30b.png?v=1583354208352">
+    <link rel="stylesheet" href="header.css" />
+    <link rel="stylesheet" href="front-page.css" />
+    <link rel="stylesheet" href="home-page.css" />
+    <link rel="stylesheet" href="books.css" />
+    <link rel="stylesheet" href="arts.css">
+    <link rel="stylesheet" href="footer.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <script type="module" src="api-home-scripts.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <input type="checkbox" id="chk1" />
+      <div class="logo">
+        <h2>
+          <a href="#front-page">The New York <span>Times</span></a>
+        </h2>
+      </div>
+      <ul>
+        <li>
+          <a href="#home">Home<i class="fa-solid fa-house"></i></a>
+        </li>
+        <li>
+          <a href="#books-sk">Books<i class="fa-solid fa-book"></i></a>
+        </li>
+        <li>
+          <a href="#arts-sc">Arts<i class="fa-solid fa-paintbrush"></i></a>
+        </li>
+      </ul>
+      <div class="menu">
+        <label for="chk1">
+          <i class="fa-solid fa-burger"></i>
+        </label>
+      </div>
+    </header>
+    <section class="front-page" id="front-page">
+      <div class="bg-image">
+        <div class="filter-blur"></div>
+      </div>
+      <div class="front-page-content">
+        <h1>New York <span>Times</span></h1>
+        <a href="#home">
+          <button class="btn">Check News</button>
+        </a>
+      </div>
+    </section>
+
+    <section class="home" id="home">
+      <div class="title-page" id="home-title">
+        <h1>Top News</h1>
+        <div class="time">
+          <time id="curr-time"></time>
+      </div>
+      </div>
+      <div class="container swiper">
+        <div class="card-wrapper">
+          <ul class="card-list swiper-wrapper"></ul>
+
+          <div class="swiper-pagination"></div>
+          <div class="swiper-slide-button swiper-button-prev"></div>
+          <div class="swiper-slide-button swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="books-sk" id="books-sk">
+      <div class="books-sk-container">
+        <div class="left-book" id="left-book">
+          <h1>Hard Cover Books</h1>
+          <ul class="hard-cover-books" id="hard-cover-books">
+          </ul>
+        </div>
+
+    </section>
+
+    <section class="arts-sc" id="arts-sc">
+      <div class="arts-sc-container">
+        <div class="arts-items" id="arts-items">
+          <h1>Arts</h1>
+        <ul class="top-arts" id="top-arts">
+
+        </ul>
+        </div>
+      </div>
+    
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container"><a href=" https://developer.nytimes.com">
+        <img src="https://developer.nytimes.com/files/poweredby_nytimes_200a.png?v=1583354208344" alt="Footer Logo" class="footer-logo">
+      </a>
+          <p>For educational purposes.</p>
+      </div>
+  </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </body>
+</html>
