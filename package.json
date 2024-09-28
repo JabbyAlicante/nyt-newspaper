@@ -1,0 +1,19 @@
+{
+  "name": "jabs-alicante",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "parcel serve jabby/main.html",
+    "build": "parcel build jabby/main.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  },
+  "dependencies": {
+    "serve": "^14.2.3"
+  }
+}
